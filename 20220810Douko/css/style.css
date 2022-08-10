@@ -1,6 +1,11 @@
 * {
   color: #888888;
-/* border:solid 1px #ff0000; */
+  /* border:solid 1px #ff0000; */
+}
+
+body{
+  margin:0;
+  padding:0;
 }
 
 /* テキストカラーは個別に指定していなければグレー */
@@ -29,10 +34,9 @@
 
 /* ここまでheader */
 
-
 .eye-catch{
   position:relative;
-  height: 45vmax;
+  height: 40vmax;
   /* min-height: 500px; */
 }
 
@@ -155,8 +159,8 @@ section:nth-child(2n){
 .section-service{
   position: relative;
   width: 70vw;
-  height: 40vmax;
-  min-height: 300px;
+  height: 35vmax;
+  min-height: 250px;
   margin: 0 auto;
 }
 
@@ -245,11 +249,11 @@ section:nth-child(2n){
 .section-blog{
   background-color: #fafafa;
   width: 70vw;
-  height: 55vmax;
-  min-height: 500px;
+  height: 90vmin;
+  min-height: 450px;
+  max-height:100vh;
   margin: 0 auto;
 }
-
 
 .blogs-flex{
   display:flex;
@@ -258,35 +262,38 @@ section:nth-child(2n){
 
 .blog-box{
   background-color: #ffffff;
-  width: 40vmin;
-  min-width:20vw;
+  width: 20vw;
+  /* min-width:25vw; */
   height:60vmin;
-  min-height:250px;
-  max-height:300px;
+  min-height:240px;
+  max-height: 280px;
   position:relative;
   border-radius: 10px;
 }
 
 .blog-content{
   position:relative;
+  min-height:150px;
 }
 
 .blog-box .card-head{
   background-color: #cc00aa;
   color:#ffffff;
   display:inline-block;
-  font-size:1.2vw;
-  padding:5px 15px;
+  font-size:1vw;
+  line-height:1rem;
+  padding:0.1vh 1.5vw;
   position:absolute;
-  top:-3vh;
+  top:-12px;  
   z-index: 5;
   border-radius: 10px 0 0 0;
 }
 
 
 .blog-img{
-  display:block;
+  display:absolute; 
   width:100%;
+  height:auto;
   border-radius: 10px 10px 0 0;
 }
 
@@ -314,7 +321,6 @@ section:nth-child(2n){
 .to-blogs{
   min-width: 250px;
   position:relative;
-  top:20px;
   margin:50px auto;
   text-align: center;
 }
@@ -335,7 +341,8 @@ section:nth-child(2n){
 .section-company{
   position: relative;
   width: 55vw;
-  height: 90vh;
+  height:35vmax;
+  min-height:400px;
   margin: 0 auto;
 }
 
@@ -362,17 +369,14 @@ section:nth-child(2n){
 }
 
 
-/* ここまで会社概要 */
-
-/* ここまでarticle */
 
 .others{
   display:flex;
   justify-content: center;
-  margin:auto auto;
+  /* margin:auto auto; */
   height:200px;
-
-
+  
+  
 }
 
 .others-box{
@@ -399,6 +403,9 @@ section:nth-child(2n){
 .intervew{
   background:url(../img/interview.png) no-repeat;
 }
+/* ここまで会社概要 */
+
+/* ここまでarticle */
 
 /* ここまでmain */
 
